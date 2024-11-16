@@ -505,3 +505,47 @@ img {
   border-radius: 100%;
   margin-bottom: 10x;
 }
+/* Responsive layout for smaller screens */
+@media screen and (max-width: 768px) {
+  .home {
+      flex-direction: column; /* Stack elements vertically */
+      padding: 2rem 1rem;
+      gap: 1rem;
+  }
+
+  .home__data, .headshot {
+      width: 100%; /* Make both sections take full width */
+      text-align: center; /* Center-align text */
+  }
+
+  .headshot img {
+      max-width: 80%; /* Scale image to fit smaller screens */
+      height: auto;
+      margin: 0 auto;
+  }
+
+  .home__title {
+      font-size: 1.5rem; /* Adjust font size */
+  }
+
+  .button {
+      padding: 0.5rem 1rem; /* Reduce padding for buttons */
+  }
+
+  .home__social-icon {
+      font-size: 20px; /* Adjust icon size */
+      margin: 0 10px; /* Add spacing for icons */
+  }
+}
+
+/* For even smaller screens (mobile-first approach) */
+@media screen and (max-width: 480px) {
+  .home__title {
+      font-size: 1.25rem;
+  }
+
+  .headshot img {
+      max-width: 100%;
+  }
+}
+
